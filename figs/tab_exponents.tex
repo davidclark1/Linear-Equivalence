@@ -1,0 +1,32 @@
+\begin{table*}[t]
+\centering
+\caption{Fitted exponents, with standard errors. Top, SCS model at $g = 2.5$ (Fig.~\ref{fig:scaling}), by sampling ratio $\alpha$. Bottom, models with nonzero mean activities (Fig.~\ref{fig:nzm_scaling}) at $g = 20$ and $\alpha = 200$, with the ansatz evaluated in three ways. The first way uses the site-specific responses and residual power spectra measured in the network (measured), the second computes them from the single-site theory at the measured temporal mean inputs (single-site), and the third computes them from the single-site theory at the temporal mean inputs of the solved TAP-like equation (TAP-solved). For $C^\Delta_{ij}(\tau = 0)$ and $C^{\breve{\Delta}}_{ij}(\tau = 0)$, the sampling floor is subtracted in quadrature.}
+\label{tab:exponents}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+$\alpha$ & error of the ansatz, $C^\phi_{ij}(\tau = 0) - \bar{C}^\phi_{ij}(\tau = 0)$ & relative error & $C^\Delta_{ij}(\tau = 0)$ with $\beta_\star$ \\
+predicted & $-1$ & $-1/2$ & $\leq -1$ \\
+\midrule
+$200$ & $-0.90 \pm 0.04$ & $-0.39 \pm 0.04$ & $-1.28 \pm 0.04$ \\
+$800$ & $-0.96 \pm 0.05$ & $-0.44 \pm 0.04$ & $-1.30 \pm 0.04$ \\
+$3200$ & $-0.93 \pm 0.06$ & $-0.41 \pm 0.05$ & $-1.30 \pm 0.05$ \\
+\bottomrule
+\end{tabular}
+
+\vspace{1em}
+
+\medmuskip=1mu\begin{tabular}{@{}l*{8}{@{\hspace{6.5pt}}c}@{}}
+\toprule
+ & $\bar{\phi}_i - \mathcal{M}_\star(\bar{h}_i)$ & \multicolumn{3}{c}{$C^{\breve{\phi}}_{ij}(\tau = 0) - \bar{C}^{\breve{\phi}}_{ij}(\tau = 0)$} & \multicolumn{3}{c}{relative error} & $C^{\breve{\Delta}}_{ij}(\tau = 0)$ \\
+\cmidrule(lr){3-5} \cmidrule(lr){6-8}
+Model &  & measured & single-site & TAP-solved & measured & single-site & TAP-solved &  \\
+predicted & $-1/2$ & $-1$ & $-1$ & $-1$ & $-1/2$ & $-1/2$ & $-1/2$ & $\leq -1$ \\
+\midrule
+Sigmoid & $-0.51 \pm 0.01$ & $-0.97 \pm 0.02$ & $-1.00 \pm 0.06$ & $-1.02 \pm 0.04$ & $-0.46 \pm 0.01$ & $-0.50 \pm 0.05$ & $-0.50 \pm 0.03$ & $-1.07 \pm 0.02$ \\
+Sigmoid, biases & $-0.49 \pm 0.01$ & $-0.93 \pm 0.03$ & $-0.90 \pm 0.04$ & $-0.92 \pm 0.04$ & $-0.42 \pm 0.03$ & $-0.43 \pm 0.03$ & $-0.45 \pm 0.04$ & $-1.05 \pm 0.03$ \\
+Hebbian, $k = -2$ & $-0.51 \pm 0.01$ & $-0.96 \pm 0.02$ & $-0.94 \pm 0.02$ & $-0.94 \pm 0.03$ & $-0.47 \pm 0.01$ & $-0.44 \pm 0.02$ & $-0.47 \pm 0.02$ & $-1.03 \pm 0.02$ \\
+Hebbian, $k = +2$ & $-0.52 \pm 0.01$ & $-0.91 \pm 0.02$ & $-0.97 \pm 0.02$ & $-0.98 \pm 0.03$ & $-0.44 \pm 0.02$ & $-0.47 \pm 0.02$ & $-0.48 \pm 0.03$ & $-1.06 \pm 0.03$ \\
+Lotka--Volterra & $-0.52 \pm 0.02$ & $-0.94 \pm 0.05$ & $-0.90 \pm 0.05$ & $-0.90 \pm 0.04$ & $-0.51 \pm 0.03$ & $-0.44 \pm 0.02$ & $-0.43 \pm 0.02$ & $-1.11 \pm 0.05$ \\
+\bottomrule
+\end{tabular}
+\end{table*}

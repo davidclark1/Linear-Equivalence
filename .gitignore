@@ -1,14 +1,7 @@
 __pycache__/
 *.pyc
-.pytest_cache/
-.ipynb_checkpoints/
-*.png
-*.pdf
-!figs/*.pdf
-figs/.scaling_cache.pkl
 results/
-logs/
-.vscode/
-.claude/
+slurm/logs/*
+!slurm/logs/.gitkeep
+*.tmp
 .DS_Store
-sims/scratch/
